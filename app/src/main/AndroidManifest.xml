@@ -20,7 +20,8 @@
             android:exported="false" />
         <activity
             android:name=".NumbersActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Numbers"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
