@@ -5,11 +5,15 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+
+    android:minHeight="@dimen/list_item_height"
+    android:background="@color/tan_background"
+    >
+
     <ImageView
         android:id="@+id/image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
         android:src="@mipmap/ic_launcher"
         />
    <LinearLayout
@@ -17,19 +21,30 @@
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:orientation="vertical"
-       android:padding="16dp">
+       android:paddingLeft="16dp"
+       android:background="@color/purple_200"
+       >
     <TextView
         android:id="@+id/lang_text_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="lutti"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:text="Russia "
          />
 
     <TextView
         android:id="@+id/default_text_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="one"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        tools:text="English"
         />
     </LinearLayout>
 

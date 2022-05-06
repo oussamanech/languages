@@ -26,7 +26,8 @@ public class PhrasesActivity extends AppCompatActivity {
         words.add(new Word("Help me, please."," Помогите, пожалуйста. (pomoGIte, poZHAlusta)   "));
         words.add(new Word("What’s your (formal/informal) name?"," Как вас/тебя зовут? (kak vas/teBYA zoVUT?)  "));
 
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words,R.color.category_phrases);
+
 
         ListView listView = (ListView) findViewById(R.id.list);
 

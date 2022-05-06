@@ -32,7 +32,7 @@ public class FamilyActivity extends AppCompatActivity {
         words.add(new Word("child","ребенок   "));
         words.add(new Word("grandmother","Бабушка"));
 
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words,R.color.category_family);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
