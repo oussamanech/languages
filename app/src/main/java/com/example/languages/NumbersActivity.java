@@ -17,16 +17,16 @@ public class NumbersActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("one","один "));
-        words.add(new Word("two","два "));
-        words.add(new Word("three","три "));
-        words.add(new Word("four","четыре "));
-        words.add(new Word("five","пять "));
-        words.add(new Word("six","шесть "));
-        words.add(new Word("seven","семь "));
-        words.add(new Word("eight","восемь "));
-        words.add(new Word("nine","девять "));
-        words.add(new Word("ten","десять "));
+        words.add(new Word("one","один ",R.drawable.number_one));
+        words.add(new Word("two","два ",R.drawable.number_two));
+        words.add(new Word("three","три ",R.drawable.number_three));
+        words.add(new Word("four","четыре ",R.drawable.number_four));
+        words.add(new Word("five","пять ",R.drawable.number_five));
+        words.add(new Word("six","шесть ",R.drawable.number_six));
+        words.add(new Word("seven","семь ",R.drawable.number_seven));
+        words.add(new Word("eight","восемь ",R.drawable.number_eight));
+        words.add(new Word("nine","девять ",R.drawable.number_nine));
+        words.add(new Word("ten","десять ",R.drawable.number_ten));
 
         WordAdapter adapter = new WordAdapter(this, words);
 
