@@ -13,6 +13,8 @@ public class Word {
 
     private static final int NO_IMAGE_PROVIDE = -1;
 
+    private int mAudioResId;
+
     /**
      * Create a new Word object.
      *
@@ -20,17 +22,18 @@ public class Word {
      *                           (such as English)
      * @param miwokTranslation is the word in the Miwok language
      */
-    public Word(String defaultTranslation, String miwokTranslation) {
+    public Word(String defaultTranslation, String miwokTranslation,int audioResId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+        mAudioResId = audioResId;
 
     }
 
-    public Word(String defaultTranslation, String miwokTranslation, int mimageResourceID) {
+    public Word(String defaultTranslation, String miwokTranslation, int mimageResourceID,int audioResId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceID = mimageResourceID;
-
+        mAudioResId = audioResId;
     }
 
     /**
@@ -51,7 +54,10 @@ public class Word {
         return mImageResourceID;
     }
 
-    public boolean hasImage(){
-        return mImageResourceID != NO_IMAGE_PROVIDE;
-    }
+    public boolean hasImage(){      return mImageResourceID != NO_IMAGE_PROVIDE;    }
+
+    public int getmAudioResId() {       return mAudioResId;    }
+
+
+
 }
