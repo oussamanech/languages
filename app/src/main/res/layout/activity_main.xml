@@ -12,6 +12,8 @@
     <TextView
         android:id="@+id/numbers"
         style="@style/CategoryStyle"
+        android:textColor="@color/black"
+
         android:background="@color/category_numbers"
         android:text="@string/category_numbers"/>
 
